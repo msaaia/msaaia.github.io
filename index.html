@@ -3,39 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSAAIA Enterprises</title>
+    <title>Msaaia Enterprises</title>
     <link rel="stylesheet" href="website.css">
     <script src="website.js" defer></script>
+    <script src="drop.js" defer></script>
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <h1>MSAAIA Enterprises</h1>
-        <div class="header-nav">
-            <a href="#" data-page="home-page">Home</a>
-            <a href="#" data-page="about-us-page">About Us</a>
-            <a href="#" data-page="silver-plate-page">Silver-plated Products</a>
-            <a href="#" data-page="gold-plate-page">Gold-plated Products</a>
-            <a href="#" data-page="contact-us-page">Contact Us</a>
-            <a href="#" data-page="terms-and-policies-page">Terms & policies</a>
-            <a href="#" data-page="thank-you-page">More</a>
+    <div class="header-nav">
+        <h1>Msaaia Enterprises</h1>
+        <a href="#" data-page="home-page">Home</a>
+        <a href="#" data-page="about-us-page">About Us</a>
+    
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Products ▾</a>
+            <div class="dropdown-content">
+                <a href="#" data-page="silver-plate-page">Silver-plated Products</a>
+                <a href="#" data-page="gold-plate-page">Gold-plated Products</a>
+            </div>
         </div>
+    
+        <a href="#" data-page="contact-us-page">Contact Us</a>
+        <a href="#" data-page="terms-and-policies-page">Terms & policies</a>
+        <a href="#" data-page="thank-you-page">More</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </div>
+    
+    <!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a>
+    <a href="#home-page" data-page="home-page" >Home</a>
+    <a href="#about-us-page" data-page="about-us-page">About Us</a>
+    <a href="#silver-plate-page" data-page="silver-plate-page">Silver-plated Products</a>
+    <a href="#gold-plate-page" data-page="gold-plate-page">Gold-plated Products</a>
+    <a href="#contact-us-page" data-page="contact-us-page">Contact Us</a>
+    <a href="#terms-and-policies-page" data-page="terms-and-policies-page">Terms & policies</a>
+    <a href="#thank-you-page" data-page="thank-you-page">More</a>
+</div>
+    
 
     <!-- Home Page -->
     <div id="home-page" class="content-section">
         <div class="home-container">
             <div class="welcome-container">
-                <h1>Welcome to <span>MSAAIA Enterprises</span></h1>
+                <h1>Welcome to <span>Msaaia Enterprises</span></h1>
                 <p>Elevating Dining with Elegance
-                At MSAAIA Enterprises, we bring you an exquisite collection of premium
+                At Msaaia Enterprises, we bring you an exquisite collection of premium
                 stainless steel flatware, designed to add sophistication and durability 
                 to your dining experience. Crafted from high-quality 304 stainless steel 
                 and available in luxurious silver and gold finishes, our flatware blends 
                 timeless elegance with exceptional craftsmanship. Whether for everyday use,
                 fine dining, or special occasions, our cutlery ensures a perfect balance of style,
                 comfort, and durability. Explore our collection and redefine your table setting
-                with MSAAIA Enterprises – where elegance meets excellence.</p>
+                with Msaaia Enterprises – where elegance meets excellence.</p>
             </div>
             <div class="image-container">
                 <img src="f8.jpg" alt="Flatware Image 1">
@@ -50,7 +71,7 @@
     <div id="about-us-page" class="content-section" style="display: flex; justify-content: center;">
         <h1 class="page-heading">About Us</h1>
         <div class="info-container"> 
-            <p>MSAAIA Enterprises, based in Wazirabad, Pakistan, specializes in high-quality stainless steel flatware. Wazirabad, known for centuries of craftsmanship, is the heart of Pakistan’s cutlery industry.
+            <p>Msaaia Enterprises, based in Wazirabad, Pakistan, specializes in high-quality stainless steel flatware. Wazirabad, known for centuries of craftsmanship, is the heart of Pakistan’s cutlery industry.
             We offer premium flatware crafted from 304 stainless steel in elegant silver and gold finishes, ensuring durability, elegance, and sophistication for every dining occasion.</p>
         
 <p>Premium Stainless Steel Flatware Collection – Silver & Gold Finish
@@ -63,7 +84,7 @@ Elevate your dining experience with our luxurious flatware collection, crafted f
     <div id="contact-us-page" class="content-section" style="display: flex; justify-content: center;">
         <h1 class="page-heading">Contact Us</h1>
         <div class="info-container">
-            <p><strong>Email:</strong> msaaia.enterprises@gmail.com</p>
+            <p><strong>Email:</strong> Msaaia.enterprises@gmail.com</p>
             <p><strong>WhatsApp:</strong> +92 305 4453000</p>
             <p><strong>Location:</strong> Wazirabad, Pakistan</p>
         </div>
@@ -118,7 +139,7 @@ Elevate your dining experience with our luxurious flatware collection, crafted f
     <div id="thank-you-page" class="content-section" style="display: flex; justify-content: center;">
         <h1 class="page-heading">Thank You for Visiting!</h1>
         <div class="info-container">
-            <p>We appreciate your interest in MSAAIA Enterprises.</p>
+            <p>We appreciate your interest in Msaaia Enterprises.</p>
             <video class="thank-you-video" controls>
                 <source src="fvideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -128,7 +149,7 @@ Elevate your dining experience with our luxurious flatware collection, crafted f
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 MSAAIA Enterprises. All Rights Reserved.</p>
+        <p>&copy; 2025 Msaaia Enterprises. All Rights Reserved.</p>
     </footer>
 
 <script src="website.js"></script>
