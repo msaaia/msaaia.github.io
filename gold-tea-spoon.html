@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea Spoon - MSAAIA Enterprises</title>
+    <title>Tea Spoon - Msaaia Enterprises</title>
     <link rel="stylesheet" href="website.css">
+    <script src="website.js" defer></script>
+    <script src="drop.js" defer></script>
 </head>
 <body>
-    <div class="header">
-        <h1>MSAAIA Enterprises</h1>
-        <div class="header-nav">
-            <a href="index.html">Home</a>
-            <a href="index.html#about-us-page">About Us</a>
-            <a href="index.html#silver-plate-page">Silver-plated Products</a>
-            <a href="index.html#gold-plate-page">Gold-plated Products</a>
-            <a href="index.html#contact-us-page">Contact Us</a>
-            <a href="index.html#terms-and-policies-page">Terms & policies</a>
-            <a href="index.html#more-page">More</a>
+    <!-- Header -->
+    <div class="header-nav">
+        <h1>Msaaia Enterprises</h1>
+        <a href="#" data-page="home-page">Home</a>
+        <a href="#" data-page="about-us-page">About Us</a>
+    
+        <div class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Products ▾</a>
+            <div class="dropdown-content">
+                <a href="#" data-page="silver-plate-page">Silver-plated Products</a>
+                <a href="#" data-page="gold-plate-page">Gold-plated Products</a>
+            </div>
         </div>
+    
+        <a href="#" data-page="contact-us-page">Contact Us</a>
+        <a href="#" data-page="terms-and-policies-page">Terms & policies</a>
+        <a href="#" data-page="thank-you-page">More</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </div>
+    
+    <!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0);" class="closebtn" onclick="closeMenu()">&times;</a>
+    <a href="#home-page" data-page="home-page" >Home</a>
+    <a href="#about-us-page" data-page="about-us-page">About Us</a>
+    <a href="#silver-plate-page" data-page="silver-plate-page">Silver-plated Products</a>
+    <a href="#gold-plate-page" data-page="gold-plate-page">Gold-plated Products</a>
+    <a href="#contact-us-page" data-page="contact-us-page">Contact Us</a>
+    <a href="#terms-and-policies-page" data-page="terms-and-policies-page">Terms & policies</a>
+    <a href="#thank-you-page" data-page="thank-you-page">More</a>
+</div>
     <div class="product-detail-container">
         <div class="product-image">
             <img src="s2.jpg" alt="Tea Spoon">
@@ -37,7 +59,7 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 MSAAIA Enterprises. All Rights Reserved.</p>
+        <p>&copy; 2025 Msaaia Enterprises. All Rights Reserved.</p>
     </footer>
     <script src="website.js"></script>
 </body>
